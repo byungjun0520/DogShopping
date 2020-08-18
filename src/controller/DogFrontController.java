@@ -11,6 +11,11 @@ import javax.servlet.http.HttpServletResponse;
 import vo.ActionForward;
 import action.Action;
 import action.DogCartAddAction;
+import action.DogCartListAction;
+import action.DogCartQtyDownAction;
+import action.DogCartQtyUpAction;
+import action.DogCartRemoveAction;
+import action.DogCartSearchAction;
 import action.DogListAction;
 import action.DogRegistAction;
 import action.DogRegistFormAction;
@@ -97,7 +102,7 @@ public class DogFrontController extends HttpServlet {
 		}catch(Exception e) {
 			e.printStackTrace();
 		}
-	}else if(command.equals("/dogCartQtyUp.dog")) {
+	}else if(command.equals("/dogCartQtyUp.dog")){
 		
 		action = new DogCartQtyUpAction();
 		//프로젝트명 + 기능 + 형태
@@ -106,7 +111,7 @@ public class DogFrontController extends HttpServlet {
 		}catch(Exception e) {
 			e.printStackTrace();
 		}
-	}else if(command.equals("/dogCartQtyDown.dog")) {
+	}else if(command.equals("/dogCartQtyDown.dog")){
 		
 		action = new DogCartQtyDownAction();
 		//프로젝트명 + 기능 + 형태
