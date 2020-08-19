@@ -120,7 +120,7 @@ function checkQty(kind, qty) {
             <tr id="select">
                <td colspan="6">
                   <select id="startMoney" name="startMoney">
-                     <option>최저</option>
+                     <option value="1000">최저</option>
                      <c:choose>
                          <c:when test="${startMoney==1000}">
                             <option selected="selected">1000</option>
@@ -156,7 +156,7 @@ function checkQty(kind, qty) {
                   </select>
                   
                   <select id="endMoney" name="endMoney">
-                      <option>최고</option>
+                      <option value="10000">최고</option>
                       
                       <c:choose>
                           <c:when test="${endMoney==1000}">
