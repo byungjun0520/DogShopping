@@ -15,7 +15,7 @@ public class DogCartRemoveAction implements Action {
 		DogCartRemoveService dogCartRemoveService =
 				new DogCartRemoveService();
 		dogCartRemoveService.cartRemove(request, kindArray);
-		ActionForward forward = new ActionForward("dogCartList.do", true);
+		ActionForward forward = new ActionForward("dogCartList.dog", true);
 			
 		return forward;
 	}

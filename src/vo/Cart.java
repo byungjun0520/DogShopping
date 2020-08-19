@@ -8,7 +8,7 @@ public class Cart {
 	private String kind;
 	private int price;
 	private int qty;
-	private String encodingkind;
+	private String encodingKind;
 	public String getImage() {
 		return image;
 	}
@@ -33,13 +33,13 @@ public class Cart {
 	public void setQty(int qty) {
 		this.qty = qty;
 	}
-	public String getEncodingkind() {
+	public String getEncodingKind() {
 		try {
-			encodingkind = URLEncoder.encode(kind, "UTF-8");
+			encodingKind = URLEncoder.encode(kind, "UTF-8");
 		}catch(Exception e) {
 			e.printStackTrace();
 		}
-		return encodingkind;
+		return encodingKind;
 	}
 
 }
